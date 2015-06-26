@@ -1,0 +1,10 @@
+document.write('<div id="fb-root"></div>');
+document.write('<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>');
+document.write('window.fbAsyncInit = function() {');
+document.write('FB.init({');
+document.write('appId : "372088749483379",');
+document.write('status : true,');
+document.write('cookie : true,');
+document.write('xfbml : false,');
+document.write('oauth : true');
+document.write('});');

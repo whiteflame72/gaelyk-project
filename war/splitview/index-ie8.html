@@ -1,0 +1,1218 @@
+<!DOCTYPE html> 
+<html> 
+	<!-- reference: http://www.packtpub.com/article/jquery-mobile-organizing-information-with-list-views -->
+	<!-- &copy 2012 -->
+	<head>
+	<title>Mobile App</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=8">
+  	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<link rel="stylesheet" href="jquery.mobile.splitview.css" />
+  	<link rel="stylesheet"  href="jquery.mobile.grids.collapsible.css" />
+<style type="text/css">
+	.ui-header .ui-title {
+		/* http://stackoverflow.com/questions/8718384/why-is-my-header-text-being-truncated */
+		overflow: visible !important;
+		white-space: normal !important;
+	}
+	.ui-icon-facebook {
+		background-image: url('http://images-1.findicons.com/files/icons/2449/buddycons/32/facebook.png');
+		background-size: 19px 19px;
+		background-repeat: no-repeat;
+	}
+</style>
+</head>
+<body style="overvlow:auto;">
+    <div data-role="panel" data-id="menu" data-hash="crumbs" data-context="a#default1">
+      <!-- Start of first page -->
+      <div data-role="page" data-theme="a" id="main" data-hash="false">
+
+      	<div data-role="header" data-position="fixed">
+      		<h1>Main</h1>
+      	</div><!-- /header -->
+
+      	<div data-role="content" data-theme="a">	
+      		<ul data-role="listview" data-theme="a">
+            <li>About
+              <ul>
+                <li><a href="#aboutme" data-panel="main">About Me</a></li>
+                <li><a href="#aboutsv" data-panel="main">About the Application</a></li>
+              </ul>
+            </li>
+            <li>Features
+              <ul>
+                  <li><a href="#panels" data-panel="main">Panels</a></li>
+                  <li><a href="#orientation" data-panel="main">Orientation</a></li>
+                  <li><a href="#scroll" data-panel="main">Scroll</a></li>
+              </ul>
+            </li>
+            <!--
+            <li><a href="#credits" data-panel="main">Credits</a></li>
+            <li><a href="#source" data-panel="main">Source@Github</a></li>
+          	-->
+          </ul>
+      	</div><!-- /content -->
+
+<!--
+-->
+      	<div data-role="footer" data-id="ew-footer">
+      		<div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2 class="ui-splitview-hidden">&copy 2012</h2>
+      	</div><!-- /footer -->
+      </div><!-- /page -->
+
+
+      <!-- Start of 2nd page -->
+      <div data-role="page" data-theme="a" id="demo" data-hash="false" data-add-back-btn="false">
+
+        <div data-role="header" data-position="fixed">
+          <a data-role="button" data-icon="back" data-direction="reverse" data-rel="back">&nbsp;</a>
+          <h1>Facebook</h1>
+        </div><!-- /header -->
+
+        <div data-role="content" data-theme="a">
+          <ul data-role="listview" data-theme="a">
+            <li><a href="#insights" data-panel="main" id="default1">Insight</a></li>
+            <li><a href="store.html" rel="external" data-panel="main">Store</a></li>
+            <!-- <li><a href="localdeals.html" rel="external" data-panel="main">Local Deals</a></li>  -->
+            <li>
+            	<a href="#badz" data-panel="main">Announcement</a>
+            	<span class="ui-li-count">8</span>
+            </li>
+            <li>Actions            
+              <ul>
+            	<li><a href="#bar" data-panel="main" id="default2">Promote Videos</a></li>
+            	<li><a href="#previewvideos" data-panel="main">Preview Videos</a></li>
+            	<li><a href="#badz" data-panel="main">Scan Leads</a></li>
+            	<li><a href="#badz" data-panel="main">Setup Campaigns</a></li>
+              </ul>
+            </li>
+			<li><h3>Products</h3><span class="ui-li-count">23</span>
+			  <ul data-inset="true">
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			    <li><a href="#badz" data-panel="main">Product</a></li>
+			  </ul>
+			</li>
+			<li><h3>Services</h3><span class="ui-li-count">5</span>
+			  <ul data-inset="true">
+			    <li><a href="#badz" data-panel="main">Service</a></li>
+			    <li><a href="#badz" data-panel="main">Service</a></li>
+			    <li><a href="#badz" data-panel="main">Service</a></li>
+			    <li><a href="#badz" data-panel="main">Service</a></li>
+			    <li><a href="#badz" data-panel="main">Service</a></li>
+			  </ul>
+			</li>
+            <li><a href="#badz" data-panel="main">Employees</a></li>
+          </ul>
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer"  data-id="ew-footer">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2 class="ui-splitview-hidden">&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+    </div><!-- panel menu -->
+
+    <div data-role="panel" data-id="main">
+      <!-- Start of 6th page -->
+      <div data-role="page" data-theme="a" id="aboutsv">
+
+        <div data-role="header" data-position="inline">
+          <a style="display:none" href=""></a>
+          <h1>About the Application</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+          <p>This is a demo application to demonstrate a Facebook integration with SMB. It is a web application that would work great on all platforms: Desktop, Tablets(iPad), and Mobile</p>
+		  <div id="divAppInfo"></div>
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+      <!-- Start of 5th page -->
+      <div data-role="page" data-theme="a" id="aboutme">
+
+        <div data-role="header" data-position="fixed">
+          <h1>About Me</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+          <h3>Personal Profile</h3>
+		  <p>
+		  <div id="divBasicInfo"></div>
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+      <!-- Start of 7th page -->
+      <div data-role="page" data-theme="a" id="panels">
+
+        <div data-role="header" data-position="fixed">
+          <h1>Panels</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+          <p>In order for splitview to work, we defined two more <b>&lt;div&gt;</b> tags to enclose the pages - one called 'main', the right hand panel, and 'menu' which is the left sidebar panel</p>
+
+          <p>This provides us with a few advantages:</p>
+            
+          <p>1. It allows us to define the area new pages should be loaded in. We do this by using data-panel attributes on anchor tags. example:<br/><br/>
+              <b style="padding-left:30px;">&lt;a href="some_other_page" data-panel="main"&gt;</b>
+          </p>
+          <p>2. It allows us to define if a panel's page transitions should be tracked in history or not.</p>
+              <p style="padding-left:30px;">
+              This uses the data-hash attribute on the panels. It takes three options - 'true','false', and 'crumbs' with true as default. 
+              The 'crumbs' setting changes the panel's back button into a button that points to the previous page, and disables jQMobile from tracking the panel's history
+              </p>
+          <p>3. It allows us to hide and show the panel depending on screen orientation, and unobtrusively disable it when the site is viewed on mobile browsers</p>
+
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+      <!-- Start of 8th page -->
+      <div data-role="page" data-theme="a" id="orientation">
+
+        <div data-role="header" data-position="fixed">
+          <h1>Orientation and Resize</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+          <p>Very simply put, SplitView dynamically lays out the pages based on your tablet's (iPad, etc) orientation, as well as your desktop's screen size. Try it out, resize your browser, or turn your iPad to see it in portrait and landscape modes!</p>
+
+          <p>NOTE: you may have to refresh the view if you scale the browser window down to a mobile size - less than 480px - Splitview determines upon page load if it should lay the pages out in splitview mode or mobile mode (the default jQmobile implementation)</p>
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+      <!-- Start of 9th page -->
+      <div data-role="page" data-theme="a" id="scroll">
+
+        <div data-role="header" data-position="fixed">
+          <h1>Scrolling</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+          <p>Splitview detects if your device is touch enabled or not. it will then implement the proper scrolling mechanism for your device. This is possible thanks to the jQuery Mobile team's experimental momentum scroll implementation, which the team promptly pointed us to. Thanks!
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer" data-id="ew-footer"  class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+      <!-- Start of 10th page -->
+      <div data-role="page" data-theme="a" id="credits">
+
+        <div data-role="header" data-position="fixed">
+          <h1>Credits</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+          <p>We could not have made Splitview possible without the work of the following folks:</p>
+
+          <h3><a href="http://www.jquerymobile.com">The jQuery Mobile team</a></h3>
+          <p>For such a wonderfully well thought piece of code that allows us to plug into it. the core that makes Splitview possible. Thank you! especially to Todd Parker, who pointed us to scrollview.js and supported us the whole way.</p>
+
+          <h3>@naugtur from the Jquery Forums</h3>
+          <p>naugtur's initial work on a splitview version of jQuery Mobile helped provide the foundation for us to begin our work on this plugin. You can find his work at: <a href="http://jquerymobiledictionary.dyndns.org/dualColumn.html">http://jquerymobiledictionary.dyndns.org/dualColumn.html</a> Thanks!</p>
+
+          <h3><a href="http://www.fellowshiptech.com">The FellowshipTech Team</a></h3>
+          <p>Fellowshiptech's work on slablet provided us with the foundation to produce the CSS that worked well for a double column layout. You can find their work at: <a href="https://github.com/fellowshiptech/slablet">https://github.com/fellowshiptech/slablet</a> Thanks!</p>
+
+          <h3>Folks at <a href="http://www.cagintranet.com">Cagintranet</a></h3>
+          <p>We couldn't have done the iPad style popover without some help from the tutorial these guys provided at <a href="http://www.cagintranet.com/archive/create-an-ipad-like-dropdown-popover/">http://www.cagintranet.com/archive/create-an-ipad-like-dropdown-popover/</a> Thanks!</p>
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+      <div data-role="page" data-theme="a" id="source">
+
+        <div data-role="header" data-position="fixed">
+          <h1>Source@Github</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+          <p>Get our source at our fork of jquery-mobile at github:<p>
+
+          <p style="padding-left: 30px;"><a href="https://github.com/asyraf9/jquery-mobile/">https://github.com/asyraf9/jquery-mobile/</a></p>
+
+          <p>codes and this sample html file are located in the /experiments/splitview folder. Splitview still needs work, so help us make it better by submitting bug reports, feature request and patches!</p>
+
+          <p>To report bugs (and there are still a few of them!), file an issue under our fork of jquery-mobile at github. Thanks!</p>
+        
+          <p><b>NOTE:</b> keep in mind that I added some namespacing to event handlers in jQMobile core. use the version of jQuerymobile found in the experiments/splitview/ folder of my fork.</p>
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+	  <div data-role="page" data-theme="a" id="insights">
+
+        <div data-role="header" data-position="fixed">
+			<h1>Insights</h1>
+			<fb:login-button class="ui-btn-right" scope="email,user_about_me,friends_about_me,friends_location,read_stream,publish_stream" autologoutlink="true" onlogin="facebookLogin();" >
+			</fb:login-button>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+			Please refer to http://www.nonprofitfacebookguy.com/the-new-facebook-insights-explained-in-plain-engish/ for a simple introduction of Facebook Insights.<p/>
+			<img src="samples/analytics.png"/>
+			<img src="samples/media_1318185793888.png"/>
+			<!--
+			<img src="http://img.labnol.org/di/facebook_share.png"/>
+			<img src="http://img.labnol.org/di/demographics.png"/>
+			-->
+        </div><!-- /content -->
+
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+	  <div data-role="page" data-theme="a" id="previewvideos">
+
+        <div data-role="header" data-position="fixed">
+			<h1>Insights</h1>
+			<fb:login-button class="ui-btn-right" scope="email,user_about_me,friends_about_me,friends_location,read_stream,publish_stream" autologoutlink="true" onlogin="facebookLogin();" >
+			</fb:login-button>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+<h2>Preview Video</h2>
+
+<form action="/videos" method="POST">
+   <table id="table1" border="0">
+      <thead>
+         <tr>
+            <td>Name: <input type="text" name="name" required size="50" value="INTERNAL section_nature">
+            URL: <input type="url" name="url" required size="155" value="http://streaming2.radiantexp.com/video/section_nature.xml"></td>
+         </tr>
+         <tr>
+            <td>Valid (applicable only if the XSD is supplied): <input type="text" name="valid" value="true">
+            Details:
+			<textarea name="details" rows="4" cols="90" maxlength="800"></textarea>
+			</td>
+         </tr>
+         <tr>
+            <td>Preview (HTTP Live Streaming works only on Mac OS Desktop/iOS Safari browser):
+            <!--<input type="text" name="preview" size="150" placeholder="This will be the preview of all videos" value="">-->
+         </tr>
+      </thead>
+      <tbody></tbody>
+   </table>
+   <table style="table-layout:fixed;width:100%;" id="table2" border="0">
+total videos = 5<p>
+
+         <tr>
+<style type="text/css" media="screen">
+	canvas, img { display:block; margin:1em auto; border:1px solid black; }
+	tr:nth-child(odd) {background: #2F4F4F}
+</style>
+<style>
+  	video { border:2px solid red; width:288px; height:auto; }
+</style>
+<script>
+function getDimensions1() {
+	video = document.getElementsByTagName('video')[0];
+	span1 = document.getElementById('dimensions');
+	span1.innerHTML = video.videoWidth + ' x ' + video.videoHeight;
+}
+</script>
+<td style='width:13%;'>
+<span style='font-weight: bold;text-decoration: underline;color: rgba(10, 10, 10, 1);'>
+Name: Nature: Introductory Video
+</span><p>
+Category: Nature</span> <p>Thumbnail: <img src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA_Intro-1800/NA_Intro-1800.jpg alt=thumbnail height=42 width=62 />
+</td>
+<td width=170>
+
+<!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody -->
+<video id="v1" preload=none controls="controls" poster="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA_Intro-1800/NA_Intro-1800-poster.jpg" width="640" height="360">
+	<source src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA_Intro-1800/NA_Intro-1800.MP4" type="video/mp4" />
+	<source src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA_Intro-1800/NA_Intro-1800.m3u8>
+	<object type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf" width="640" height="360">
+		<param name="movie" value="http://player.longtailvideo.com/player.swf" />
+		<param name="allowFullScreen" value="true" />
+		<param name="wmode" value="transparent" />
+		<param name="flashVars" value="controlbar=over&amp;image=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA_Intro-1800%2FNA_Intro-1800-poster.jpg&amp;file=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA_Intro-1800%2FNA_Intro-1800.MP4" />
+		<img alt="Streaming Video Preview" src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA_Intro-1800/NA_Intro-1800-poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video directly" />
+	</object>
+</video>
+<span style="float:right;" onclick="enterFullscreen('v1');">Enter Fullscreen</span>
+<!--
+<td><canvas width=288 height=168></canvas></td>
+-->
+<td width=150>
+*** Video Preview is 30% of the native resolution (1280x720p), M3U8 is 960x540p (75% of the 720p) ***
+<span style='font-size: 8'>
+<p>Video Dimensions: <span id='dimensions'></span><p>
+M3U8: #EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=590000
+NA_Intro-1800-600k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=437000
+NA_Intro-1800-400k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=261000
+NA_Intro-1800-200k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=188000
+NA_Intro-1800-110k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=80000
+NA_Intro-1800-40k.m3u8
+<p>
+<strong>Stream video:</strong><p><a href=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA_Intro-1800/NA_Intro-1800.m3u8>http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA_Intro-1800/NA_Intro-1800.m3u8</a><p>
+	  
+	  <strong>Download video:</strong><p><a href="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_tradition/TR0042_Thomas_Begay/TR0042_Thomas_Begay.MP4">MP4 format</a>
+</p>
+</span><p>
+</td>
+
+         </tr>
+
+         <tr>
+<style type="text/css" media="screen">
+	canvas, img { display:block; margin:1em auto; border:1px solid black; }
+</style>
+<style>
+  	video { border:2px solid red; width:288px; height:auto; }
+</style>
+<script>
+function getDimensions2() {
+	video = document.getElementsByTagName('video')[0];
+	span1 = document.getElementById('dimensions');
+	span1.innerHTML = video.videoWidth + ' x ' + video.videoHeight;
+}
+</script>
+<td style='width:20%;'>
+<span style='font-weight: bold;text-decoration: underline;color: rgba(10, 10, 10, 1);'>
+Name: Roger Fernandez
+</span><p>
+Category: Nature</span> <p>Thumbnail: <img src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0041_Roger_Fernandez/NA0041_Roger_Fernandez.jpg alt=thumbnail height=42 width=62 />
+</td>
+<td width=300>
+
+<!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody -->
+<video id="v2" preload=none controls="controls" poster="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0041_Roger_Fernandez/NA0041_Roger_Fernandez-poster.jpg" width="640" height="360">
+	<source src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0041_Roger_Fernandez/NA0041_Roger_Fernandez.MP4" type="video/mp4" />
+	<source src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0041_Roger_Fernandez/NA0041_Roger_Fernandez.m3u8>
+	<object type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf" width="640" height="360">
+		<param name="movie" value="http://player.longtailvideo.com/player.swf" />
+		<param name="allowFullScreen" value="true" />
+		<param name="wmode" value="transparent" />
+		<param name="flashVars" value="controlbar=over&amp;image=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0041_Roger_Fernandez%2FNA0041_Roger_Fernandez-poster.jpg&amp;file=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0041_Roger_Fernandez%2FNA0041_Roger_Fernandez.MP4" />
+		<img alt="Streaming Video Preview" src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0041_Roger_Fernandez/NA0041_Roger_Fernandez-poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video directly" />
+	</object>
+</video>
+<span style="float:right;" onclick="enterFullscreen('v2');">Enter Fullscreen</span>
+
+<!--
+<td><canvas width=288 height=168></canvas></td>
+-->
+<td style="word-break:break-all;">
+*** Video Preview is 30% of the native resolution (1280x720p), M3U8 is 960x540p (75% of the 720p) ***
+<span style='font-size: 8'>
+<p>Video Dimensions: <span id='dimensions'></span><p>
+M3U8: #EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=599000
+NA0041_Roger_Fernandez-600k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=438000
+NA0041_Roger_Fernandez-400k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=262000
+NA0041_Roger_Fernandez-200k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=184000
+NA0041_Roger_Fernandez-110k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=72000
+NA0041_Roger_Fernandez-40k.m3u8
+<p>
+<strong>Stream video:</strong><p><a href=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0041_Roger_Fernandez/NA0041_Roger_Fernandez.m3u8>http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0041_Roger_Fernandez/NA0041_Roger_Fernandez.m3u8</a><p>
+	  
+	  <strong>Download video:</strong><p><a href="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_tradition/TR0042_Thomas_Begay/TR0042_Thomas_Begay.MP4">MP4 format</a>
+</p>
+</span><p>
+</td>
+
+         </tr>
+
+         <tr>
+<style type="text/css" media="screen">
+	canvas, img { display:block; margin:1em auto; border:1px solid black; }
+</style>
+<style>
+  	video { border:2px solid red; width:288px; height:auto; }
+</style>
+<script>
+function getDimensions3() {
+	video = document.getElementsByTagName('video')[0];
+	span1 = document.getElementById('dimensions');
+	span1.innerHTML = video.videoWidth + ' x ' + video.videoHeight;
+}
+</script>
+<td style='width:20%;'>
+<span style='font-weight: bold;text-decoration: underline;color: rgba(10, 10, 10, 1);'>
+Name: Charles Nainoa Thompson
+</span><p>
+Category: Nature</span> <p>Thumbnail: <img src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0042_Nainoa_Thompson/NA0042_Nainoa_Thompson.jpg alt=thumbnail height=42 width=62 />
+</td>
+<td width=300>
+
+<!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody -->
+<video id="v3" preload=none controls="controls" poster="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0042_Nainoa_Thompson/NA0042_Nainoa_Thompson-poster.jpg" width="640" height="360">
+	<source src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0042_Nainoa_Thompson/NA0042_Nainoa_Thompson.MP4" type="video/mp4" />
+	<source src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0042_Nainoa_Thompson/NA0042_Nainoa_Thompson.m3u8>
+	<object type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf" width="640" height="360">
+		<param name="movie" value="http://player.longtailvideo.com/player.swf" />
+		<param name="allowFullScreen" value="true" />
+		<param name="wmode" value="transparent" />
+		<param name="flashVars" value="controlbar=over&amp;image=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0042_Nainoa_Thompson%2FNA0042_Nainoa_Thompson-poster.jpg&amp;file=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0042_Nainoa_Thompson%2FNA0042_Nainoa_Thompson.MP4" />
+		<img alt="Streaming Video Preview" src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0042_Nainoa_Thompson/NA0042_Nainoa_Thompson-poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video directly" />
+	</object>
+</video>
+<span style="float:right;" onclick="enterFullscreen('v3');">Enter Fullscreen</span>
+
+<!--
+<td><canvas width=288 height=168></canvas></td>
+-->
+<td width=50>
+*** Video Preview is 30% of the native resolution (1280x720p), M3U8 is 960x540p (75% of the 720p) ***
+<span style='font-size: 8'>
+<p>Video Dimensions: <span id='dimensions'></span><p>
+M3U8: #EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=616000
+NA0042_Nainoa_Thompson-600k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=453000
+NA0042_Nainoa_Thompson-400k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=272000
+NA0042_Nainoa_Thompson-200k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=192000
+NA0042_Nainoa_Thompson-110k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=74000
+NA0042_Nainoa_Thompson-40k.m3u8
+<p>
+<strong>Stream video:</strong><p><a href=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0042_Nainoa_Thompson/NA0042_Nainoa_Thompson.m3u8>http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0042_Nainoa_Thompson/NA0042_Nainoa_Thompson.m3u8</a><p>
+	  
+	  <strong>Download video:</strong><p><a href="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_tradition/TR0042_Thomas_Begay/TR0042_Thomas_Begay.MP4">MP4 format</a>
+</p>
+</span><p>
+</td>
+
+         </tr>
+
+         <tr>
+<style type="text/css" media="screen">
+	canvas, img { display:block; margin:1em auto; border:1px solid black; }
+</style>
+<style>
+  	video { border:2px solid red; width:288px; height:auto; }
+</style>
+<script>
+function getDimensions4() {
+	video = document.getElementsByTagName('video')[0];
+	span1 = document.getElementById('dimensions');
+	span1.innerHTML = video.videoWidth + ' x ' + video.videoHeight;
+}
+</script>
+<td style='width:20%;'>
+<span style='font-weight: bold;text-decoration: underline;color: rgba(10, 10, 10, 1);'>
+Name: Earl Kawa‘a
+</span><p>
+Category: Nature</span> <p>Thumbnail: <img src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0043_Earl_Kawaa/NA0043_Earl_Kawaa.jpg alt=thumbnail height=42 width=62 />
+</td>
+<td width=300>
+
+<!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody -->
+<video id="v4" preload=none controls="controls" poster="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0043_Earl_Kawaa/NA0043_Earl_Kawaa-poster.jpg" width="640" height="360">
+	<source src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0043_Earl_Kawaa/NA0043_Earl_Kawaa.MP4" type="video/mp4" />
+	<source src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0043_Earl_Kawaa/NA0043_Earl_Kawaa.m3u8>
+	<object type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf" width="640" height="360">
+		<param name="movie" value="http://player.longtailvideo.com/player.swf" />
+		<param name="allowFullScreen" value="true" />
+		<param name="wmode" value="transparent" />
+		<param name="flashVars" value="controlbar=over&amp;image=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0043_Earl_Kawaa%2FNA0043_Earl_Kawaa-poster.jpg&amp;file=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0043_Earl_Kawaa%2FNA0043_Earl_Kawaa.MP4" />
+		<img alt="Streaming Video Preview" src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0043_Earl_Kawaa/NA0043_Earl_Kawaa-poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video directly" />
+	</object>
+</video>
+<span style="float:right;" onclick="enterFullscreen('v4');">Enter Fullscreen</span>
+
+<!--
+<td><canvas width=288 height=168></canvas></td>
+-->
+<td width=50>
+*** Video Preview is 30% of the native resolution (1280x720p), M3U8 is 960x540p (75% of the 720p) ***
+<span style='font-size: 8'>
+<p>Video Dimensions: <span id='dimensions'></span><p>
+M3U8: #EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=640000
+NA0043_Earl_Kawaa-600k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=473000
+NA0043_Earl_Kawaa-400k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=279000
+NA0043_Earl_Kawaa-200k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=194000
+NA0043_Earl_Kawaa-110k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=80000
+NA0043_Earl_Kawaa-40k.m3u8
+<p>
+<strong>Stream video:</strong><p><a href=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0043_Earl_Kawaa/NA0043_Earl_Kawaa.m3u8>http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0043_Earl_Kawaa/NA0043_Earl_Kawaa.m3u8</a><p>
+	  
+	  <strong>Download video:</strong><p><a href="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_tradition/TR0042_Thomas_Begay/TR0042_Thomas_Begay.MP4">MP4 format</a>
+</p>
+</span><p>
+</td>
+
+         </tr>
+
+         <tr>
+<style type="text/css" media="screen">
+	canvas, img { display:block; margin:1em auto; border:1px solid black; }
+</style>
+<style>
+  	video { border:2px solid red; width:288px; height:auto; }
+</style>
+<script>
+function getDimensions5() {
+	video = document.getElementsByTagName('video')[0];
+	span1 = document.getElementById('dimensions');
+	span1.innerHTML = video.videoWidth + ' x ' + video.videoHeight;
+}
+</script>
+<td style='width:20%;'>
+<span style='font-weight: bold;text-decoration: underline;color: rgba(10, 10, 10, 1);'>
+Name: Noa Emmett Aluli, M.D.
+</span><p>
+Category: Nature</span> <p>Thumbnail: <img src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0044_Emmett_Aluli/NA0044_Emmett_Aluli.jpg alt=thumbnail height=42 width=62 />
+</td>
+<td width=300>
+
+<!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody -->
+<video id="v5" preload=none controls="controls" poster="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0044_Emmett_Aluli/NA0044_Emmett_Aluli-poster.jpg" width="640" height="360">
+	<source src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0044_Emmett_Aluli/NA0044_Emmett_Aluli.MP4" type="video/mp4" />
+	<source src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0044_Emmett_Aluli/NA0044_Emmett_Aluli.m3u8>
+	<object type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf" width="640" height="360">
+		<param name="movie" value="http://player.longtailvideo.com/player.swf" />
+		<param name="allowFullScreen" value="true" />
+		<param name="wmode" value="transparent" />
+		<param name="flashVars" value="controlbar=over&amp;image=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0044_Emmett_Aluli%2FNA0044_Emmett_Aluli-poster.jpg&amp;file=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0044_Emmett_Aluli%2FNA0044_Emmett_Aluli.MP4" />
+		<img alt="Streaming Video Preview" src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0044_Emmett_Aluli/NA0044_Emmett_Aluli-poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video directly" />
+	</object>
+</video>
+<span style="float:right;" onclick="enterFullscreen('v5');">Enter Fullscreen</span>
+
+<!--
+<td><canvas width=288 height=168></canvas></td>
+-->
+<td width=50>
+*** Video Preview is 30% of the native resolution (1280x720p), M3U8 is 960x540p (75% of the 720p) ***
+<span style='font-size: 8'>
+<p>Video Dimensions: <span id='dimensions'></span><p>
+M3U8: #EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=607000
+NA0044_Emmett_Aluli-600k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=446000
+NA0044_Emmett_Aluli-400k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=267000
+NA0044_Emmett_Aluli-200k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=189000
+NA0044_Emmett_Aluli-110k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=74000
+NA0044_Emmett_Aluli-40k.m3u8
+<p>
+<strong>Stream video:</strong><p><a href=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0044_Emmett_Aluli/NA0044_Emmett_Aluli.m3u8>http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0044_Emmett_Aluli/NA0044_Emmett_Aluli.m3u8</a><p>
+	  
+	  <strong>Download video:</strong><p><a href="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_tradition/TR0042_Thomas_Begay/TR0042_Thomas_Begay.MP4">MP4 format</a>
+</p>
+</span><p>
+</td>
+
+         </tr>
+
+         <tr>
+<style type="text/css" media="screen">
+	canvas, img { display:block; margin:1em auto; border:1px solid black; }
+</style>
+<style>
+  	video { border:2px solid red; width:288px; height:auto; }
+</style>
+<script>
+function getDimensions6() {
+	video = document.getElementsByTagName('video')[0];
+	span1 = document.getElementById('dimensions');
+	span1.innerHTML = video.videoWidth + ' x ' + video.videoHeight;
+}
+</script>
+<td style='width:20%;'>
+<span style='font-weight: bold;text-decoration: underline;color: rgba(10, 10, 10, 1);'>
+Name: Tom Cook
+</span><p>
+Category: Nature</span> <p>Thumbnail: <img src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0045_Tom_Cook/NA0045_Tom_Cook.jpg alt=thumbnail height=42 width=62 />
+</td>
+<td width=300>
+
+<!-- "Video For Everybody" http://camendesign.com/code/video_for_everybody -->
+<video id="v6" preload=none controls="controls" poster="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0045_Tom_Cook/NA0045_Tom_Cook-poster.jpg" width="640" height="360">
+	<source src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0045_Tom_Cook/NA0045_Tom_Cook.MP4" type="video/mp4" />
+	<source src=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0045_Tom_Cook/NA0045_Tom_Cook.m3u8>
+	<object type="application/x-shockwave-flash" data="http://player.longtailvideo.com/player.swf" width="640" height="360">
+		<param name="movie" value="http://player.longtailvideo.com/player.swf" />
+		<param name="allowFullScreen" value="true" />
+		<param name="wmode" value="transparent" />
+		<param name="flashVars" value="controlbar=over&amp;image=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0045_Tom_Cook%2FNA0045_Tom_Cook-poster.jpg&amp;file=http%3A%2F%2Fstreaming.radiantexp.com%2Fencoding%2Fexhibit_native_voices%2Fsection_nature%2FNA0045_Tom_Cook%2FNA0045_Tom_Cook.MP4" />
+		<img alt="Streaming Video Preview" src="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0045_Tom_Cook/NA0045_Tom_Cook-poster.jpg" width="640" height="360" title="No video playback capabilities, please download the video directly" />
+	</object>
+</video>
+<span style="float:right;" onclick="enterFullscreen('v6');">Enter Fullscreen</span>
+
+<!--
+<td><canvas width=288 height=168></canvas></td>
+-->
+<td width=50>
+*** Video Preview is 30% of the native resolution (1280x720p), M3U8 is 960x540p (75% of the 720p) ***
+<span style='font-size: 8'>
+<p>Video Dimensions: <span id='dimensions'></span><p>
+M3U8: #EXTM3U
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=602000
+NA0045_Tom_Cook-600k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=438000
+NA0045_Tom_Cook-400k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=261000
+NA0045_Tom_Cook-200k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=184000
+NA0045_Tom_Cook-110k.m3u8
+#EXT-X-STREAM-INF:PROGRAM-ID=1, BANDWIDTH=69000
+NA0045_Tom_Cook-40k.m3u8
+<p>
+<strong>Stream video:</strong><p><a href=http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0045_Tom_Cook/NA0045_Tom_Cook.m3u8>http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_nature/NA0045_Tom_Cook/NA0045_Tom_Cook.m3u8</a><p>
+	  
+	  <strong>Download video:</strong><p><a href="http://streaming.radiantexp.com/encoding/exhibit_native_voices/section_tradition/TR0042_Thomas_Begay/TR0042_Thomas_Begay.MP4">MP4 format</a>
+</p>
+</span><p>
+</td>
+
+         </tr>
+
+      </tbody>
+      
+         <input type="hidden" name="id" value="3004">
+      
+   </table>
+
+</form>
+
+<!--  end of video previews -->
+
+
+        </div><!-- /content -->
+
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+      <!-- Start of 3rd page -->
+      <div data-role="page" data-theme="a" id="bar">
+
+        <div data-role="header" data-position="inline">
+			<h1>Actions</h1>
+			<fb:login-button class="ui-btn-right" scope="email,user_about_me,friends_about_me,friends_location,read_stream,publish_stream" autologoutlink="true" onlogin="facebookLogin();" >
+			</fb:login-button>
+        </div><!-- /header -->
+
+        <div data-role="content">
+          This page allows you to promote a video to specific type of users/group.</p>
+          <div data-role="collapsible">
+            <h3>Last Video Posted</h3>
+            <p>This collapsible content will show the information about the last posted video in a list with thumbnails.</p>
+          </div>
+
+          <div data-role="collapsible-set">
+            <div data-role="collapsible" data-collapsed="false">
+              <h3>Select files from your computer</h3>
+              <p>
+			      <div id="status-message">Select some files to upload:
+						<input id="custom_file_upload" type="file" name="Filedata" />
+			      </div>
+			  </p>
+            </div>
+            
+            <div data-role="collapsible">
+              <h3>More ways to upload and create</h3>
+              <p>This collapsible content will allow you to specify video metadata and various ways to upload videos.</p>
+            <form action="#" method="get">
+
+              <h2>Form elements</h2>
+
+              <p>This page contains various progressive-enhancement driven form controls. Native elements are sometimes hidden from view, but their values are maintained so the form can be submitted normally. </p>
+
+              <p>Browsers that don't support the custom controls will still deliver a usable experience, because all are based on native form elements.</p>
+
+              <div data-role="fieldcontain">
+                   <label for="name">Text Input:</label>
+                   <input type="text" name="name" id="name" value=""  />
+              </div>
+
+              <div data-role="fieldcontain">
+              <label for="textarea">Textarea:</label>
+              <textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+              </div>
+
+              <div data-role="fieldcontain">
+                   <label for="search">Search Input:</label>
+                   <input type="search" name="password" id="search" value=""  />
+              </div>
+
+              <div data-role="fieldcontain">
+                <label for="slider2">Flip switch:</label>
+                <select name="slider2" id="slider2" data-role="slider">
+                  <option value="off">Off</option>
+                  <option value="on">On</option>
+                </select>
+              </div>
+
+              <div data-role="fieldcontain">
+                <label for="slider">Slider:</label>
+                <input type="range" name="slider" id="slider" value="0" min="0" max="100"  />
+              </div>
+
+              <div data-role="fieldcontain">
+              <fieldset data-role="controlgroup">
+                <legend>Choose as many snacks as you'd like:</legend>
+                <input type="checkbox" name="checkbox-1a" id="checkbox-1a" class="custom" />
+                <label for="checkbox-1a">Cheetos</label>
+
+                <input type="checkbox" name="checkbox-2a" id="checkbox-2a" class="custom" />
+                <label for="checkbox-2a">Doritos</label>
+
+                <input type="checkbox" name="checkbox-3a" id="checkbox-3a" class="custom" />
+                <label for="checkbox-3a">Fritos</label>
+
+                <input type="checkbox" name="checkbox-4a" id="checkbox-4a" class="custom" />
+                <label for="checkbox-4a">Sun Chips</label>
+                </fieldset>
+              </div>
+
+              <div data-role="fieldcontain">
+              <fieldset data-role="controlgroup" data-type="horizontal">
+                  <legend>Font styling:</legend>
+                  <input type="checkbox" name="checkbox-6" id="checkbox-6" class="custom" />
+                <label for="checkbox-6">b</label>
+
+                <input type="checkbox" name="checkbox-7" id="checkbox-7" class="custom" />
+                <label for="checkbox-7"><em>i</em></label>
+
+                <input type="checkbox" name="checkbox-8" id="checkbox-8" class="custom" />
+                <label for="checkbox-8">u</label>
+                </fieldset>
+              </div>
+
+              <div data-role="fieldcontain">
+                  <fieldset data-role="controlgroup">
+                    <legend>Choose a pet:</legend>
+                        <input type="radio" name="radio-choice-1" id="radio-choice-1" value="choice-1" checked="checked" />
+                        <label for="radio-choice-1">Cat</label>
+
+                        <input type="radio" name="radio-choice-1" id="radio-choice-2" value="choice-2"  />
+                        <label for="radio-choice-2">Dog</label>
+
+                        <input type="radio" name="radio-choice-1" id="radio-choice-3" value="choice-3"  />
+                        <label for="radio-choice-3">Hamster</label>
+
+                        <input type="radio" name="radio-choice-1" id="radio-choice-4" value="choice-4"  />
+                        <label for="radio-choice-4">Lizard</label>
+                  </fieldset>
+              </div>
+
+              <div data-role="fieldcontain">
+                  <fieldset data-role="controlgroup" data-type="horizontal">
+                    <legend>Layout view:</legend>
+                        <input type="radio" name="radio-choice-b" id="radio-choice-c" value="on" checked="checked" />
+                        <label for="radio-choice-c">List</label>
+                        <input type="radio" name="radio-choice-b" id="radio-choice-d" value="off" />
+                        <label for="radio-choice-d">Grid</label>
+                        <input type="radio" name="radio-choice-b" id="radio-choice-e" value="other" />
+                        <label for="radio-choice-e">Gallery</label>
+                  </fieldset>
+              </div>
+
+              <div data-role="fieldcontain">
+                <label for="select-choice-1" class="select">Choose shipping method:</label>
+                <select name="select-choice-1" id="select-choice-1">
+                  <option value="standard">Standard: 7 day</option>
+                  <option value="rush">Rush: 3 days</option>
+                  <option value="express">Express: next day</option>
+                  <option value="overnight">Overnight</option>
+                </select>
+              </div>
+
+              <div data-role="fieldcontain">
+                <label for="select-choice-3" class="select">Your state:</label>
+                <select name="select-choice-3" id="select-choice-3">
+                  <option value="AL">Alabama</option>
+                  <option value="AK">Alaska</option>
+                  <option value="AZ">Arizona</option>
+                  <option value="AR">Arkansas</option>
+                  <option value="CA">California</option>
+                  <option value="CO">Colorado</option>
+                  <option value="CT">Connecticut</option>
+                  <option value="DE">Delaware</option>
+                  <option value="FL">Florida</option>
+                  <option value="GA">Georgia</option>
+                  <option value="HI">Hawaii</option>
+                  <option value="ID">Idaho</option>
+                  <option value="IL">Illinois</option>
+                  <option value="IN">Indiana</option>
+                  <option value="IA">Iowa</option>
+                  <option value="KS">Kansas</option>
+                  <option value="KY">Kentucky</option>
+                  <option value="LA">Louisiana</option>
+                  <option value="ME">Maine</option>
+                  <option value="MD">Maryland</option>
+                  <option value="MA">Massachusetts</option>
+                  <option value="MI">Michigan</option>
+                  <option value="MN">Minnesota</option>
+                  <option value="MS">Mississippi</option>
+                  <option value="MO">Missouri</option>
+                  <option value="MT">Montana</option>
+                  <option value="NE">Nebraska</option>
+                  <option value="NV">Nevada</option>
+                  <option value="NH">New Hampshire</option>
+                  <option value="NJ">New Jersey</option>
+                  <option value="NM">New Mexico</option>
+                  <option value="NY">New York</option>
+                  <option value="NC">North Carolina</option>
+                  <option value="ND">North Dakota</option>
+                  <option value="OH">Ohio</option>
+                  <option value="OK">Oklahoma</option>
+                  <option value="OR">Oregon</option>
+                  <option value="PA">Pennsylvania</option>
+                  <option value="RI">Rhode Island</option>
+                  <option value="SC">South Carolina</option>
+                  <option value="SD">South Dakota</option>
+                  <option value="TN">Tennessee</option>
+                  <option value="TX">Texas</option>
+                  <option value="UT">Utah</option>
+                  <option value="VT">Vermont</option>
+                  <option value="VA">Virginia</option>
+                  <option value="WA">Washington</option>
+                  <option value="WV">West Virginia</option>
+                  <option value="WI">Wisconsin</option>
+                  <option value="WY">Wyoming</option>
+                </select>
+              </div>
+
+              <div data-role="fieldcontain">
+                <label for="select-choice-a" class="select">Choose shipping method:</label>
+                <select name="select-choice-a" id="select-choice-a" data-native-menu="false">
+                  <option>Custom menu example</option>
+                  <option value="standard">Standard: 7 day</option>
+                  <option value="rush">Rush: 3 days</option>
+                  <option value="express">Express: next day</option>
+                  <option value="overnight">Overnight</option>
+                </select>
+              </div>
+
+              <div class="ui-body ui-body-b">
+              <fieldset class="ui-grid-a">
+                  <div class="ui-block-a"><button type="submit" data-theme="a">Cancel</button></div>
+                  <div class="ui-block-b"><button type="submit" data-theme="a">Submit</button></div>
+                </fieldset>
+              </div>
+            </form>              
+            </div>
+          </div>
+           
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+
+      <!-- Start of 4th page -->
+      <div data-role="page" data-theme="a" id="badz">
+
+        <div data-role="header" data-position="fixed">
+          <h1>Announcement</h1>
+        </div><!-- /header -->
+
+        <div data-role="content"> 
+          <div class='row'>
+            <div class='sixcol'
+              <p>I'm first in the source order so I'm shown as the page.</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque consectetur, ligula quis convallis gravida, tortor odio mattis purus, a fringilla mauris velit eu nisi. Vivamus laoreet tincidunt diam, sit amet tristique purus lobortis ac. Etiam commodo placerat elit. In aliquam dapibus felis, molestie molestie purus scelerisque sit amet. Donec vitae varius arcu. Aliquam dapibus dolor magna, nec posuere felis. Nullam in suscipit massa. Duis nec nulla nec urna sollicitudin fringilla. Proin at rutrum mi. Maecenas vitae urna ante, ac gravida tortor.</p>
+
+              <p>Vestibulum porta pretium nunc, at adipiscing tortor fringilla sit amet. Sed venenatis varius turpis, vel fringilla purus egestas in. Curabitur interdum mauris nec velit vehicula sed aliquam nulla convallis. Nulla id magna libero, sagittis fringilla metus. Suspendisse dapibus tincidunt tristique. Fusce interdum tincidunt tincidunt. Phasellus tempus fringilla augue eget tincidunt. Donec facilisis mauris ut metus eleifend eget scelerisque nulla sagittis. Ut vel elit non risus dapibus luctus. Pellentesque vel nibh tortor.</p>
+            </div>
+            <div class='sixcol last'
+              <p>Fusce a nisi at dolor rutrum tristique. Donec faucibus metus vitae lorem scelerisque malesuada scelerisque enim imperdiet. Aliquam in erat orci. Ut ultrices, erat eu luctus accumsan, lorem nibh cursus purus, in laoreet nisi tellus interdum sem. Nulla fringilla molestie lectus nec hendrerit. In in mollis tortor. Nunc lectus tortor, porttitor vitae viverra non, dignissim ac ligula. In tincidunt libero id turpis gravida iaculis rhoncus dolor aliquam. Vestibulum congue massa nec nibh sagittis tempor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque quis urna arcu. Quisque feugiat ante id turpis ultrices vel imperdiet ipsum volutpat. Donec enim magna, pretium eu scelerisque ut, pretium placerat risus.</p> Sed sed lacinia ante. Aenean non quam in ipsum pharetra condimentum.
+
+              <p>Donec turpis lacus, pharetra ac viverra sit amet, lobortis eu nisl. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Curabitur porttitor dignissim orci ut feugiat. Praesent quis auctor purus. Suspendisse non elit accumsan mi pellentesque laoreet. Nullam et sapien sed nibh dictum tempor sit amet ut velit. Vestibulum varius ultricies lorem sed ultricies. Vestibulum auctor velit vitae ante eleifend eget bibendum metus rutrum. Nulla facilisis luctus mi laoreet rutrum. Nunc accumsan urna at elit pellentesque ut venenatis lectus adipiscing. Ut et arcu urna. Aliquam eros leo, ultricies vel porta nec, tempor sit amet leo. Quisque imperdiet facilisis orci ut malesuada. Nunc eget elit mauris. Mauris sed felis lectus.</p>
+
+              <p>Duis purus sem, condimentum eget posuere sed, vulputate non lorem. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras risus urna, commodo quis interdum sit amet, elementum vitae lacus. Ut tempor hendrerit ante et facilisis. Vivamus elementum purus justo, ut auctor arcu. Cras varius rhoncus venenatis. Nulla dignissim velit a erat euismod pretium. In sed leo orci, et consectetur justo. Vestibulum ipsum urna, cursus in placerat in, malesuada eu odio. Nunc eget ullamcorper tortor. In commodo, turpis sed egestas egestas, dolor sem mattis nulla, eu semper lectus metus at eros. Sed cursus nisl id risus fermentum quis aliquam odio pretium. Quisque justo eros, blandit gravida tristique eget, rhoncus in magna. Integer volutpat faucibus dolor, sit amet tempor metus ornare consequat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nunc et lacus enim, sit amet consequat turpis.</p>    
+            </div>
+          </div>
+        </div><!-- /content -->
+
+<!--
+-->
+        <div data-role="footer" data-id="ew-footer" class="ui-splitview-hidden">
+          <div data-role="navbar">
+            <ul>
+              <li><a href="#main" class="ui-btn-active" data-transition="slideup">Main</a></li>
+              <li><a href="#demo" data-transition="slideup">Facebook</a></li>
+            </ul>
+          </div><!-- /navbar -->
+          <h2>&copy 2012</h2>
+        </div><!-- /footer -->
+      </div><!-- /page -->
+
+
+    </div><!-- panel main -->
+</body>
+<!-- avoid "'body' is null or not an object" error (http://flowplayer.org/forum/2/44182) -->
+	<script type="text/javascript" src="jquery-1.7.1.js"></script>
+	<script src="custom-scripting.js"></script> <!-- has to be before jquerymobile plugin !!! -->
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>-->	<!-- can't use the real one yet, as some namespacing is added -->
+	<script type="text/javascript" src="jquery.mobile.splitview.js"></script>
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript" src="iscroll-wrapper.js"></script>
+	<!-- https://groups.google.com/forum/#!topic/iscroll/c9iX8vixgbM -->
+	<script type="text/javascript" src="iscroll-ie-fix.js"></script>
+	<script type="text/javascript" src="scrollability.js"></script>
+
+<script type="text/javascript">
+//http://stackoverflow.com/questions/8230877/jquery-mobile-slider-carousel
+/*
+$(document).swiperight(function(){
+  jqPlugin.goPrev();
+});
+
+$(document).swipeleft(function(){
+  jqPlugin.goNext();
+});
+*/
+//http://forum.jquery.com/topic/nested-list-2-questions-back-button-on-sub-nav-and-change-style-of-header-on-sub-nav
+$('.ui-page').live( 'pageinit',
+	function(event)
+	{
+		$('.ui-bar-b').removeClass('ui-bar-b').addClass('ui-bar-a');
+	    //$(this).filter(':jqmData(url*=ui-page)').find(':jqmData(role=header)').prepend('')
+		$("[data-role='page']").live("pageshow", function() {
+			//$('a[data-rel|="back"]').removeClass().addClass("ui-btn-back ui-btn-left ui-btn ui-btn-icon-notext ui-btn-corner-all ui-shadow ui-btn-up-b");
+			$('a[data-rel|=back]').removeClass().addClass('ui-btn-back ui-btn-left ui-btn ui-btn-icon-notext ui-btn-corner-all');
+		});
+		//$.mobile.page.prototype.options.backBtnText = "previous";
+		//alert('pageinit');
+
+	}
+);
+</script>
+
+<!--  script language="javascript" type="text/javascript" src="fbinit.js"></script --> <!-- does not work on MS IE -->
+<div id="fb-root"></div>
+<script type="text/javascript" src="http://connect.facebook.net/en_US/all.js"></script>
+<script type="text/javascript">FB.init({oauth : true, appId: "372088749483379", status:true, cookie:true, xfbml:true});</script>
+
+<script language="javascript" type="text/javascript">
+function facebookLogin() {
+	var divBasicInfo = document.getElementById("divBasicInfo");
+	if (response.authResponse) {
+		divBasicInfo.innerHTML = '';
+      	divBasicInfo.innerHTML += "Logged in user: <br>";
+		FB.api('/me', function(user) {
+		      divBasicInfo.innerHTML += user.name + "<br>";
+		      divBasicInfo.innerHTML += user.email + "<br>";
+		      divBasicInfo.innerHTML += user.birthday + "<br>";
+		      divBasicInfo.innerHTML += user.currentlocation + "<br><br>";
+	    });		
+		
+		// display friends list start
+		FB.api('/me/friends', function(response) {
+			//document.write('Good to see you, ' + response.data.length + '.');
+			var data=response.data;
+			//alert(response);
+			divBasicInfo.innerHTML += "Friend list: <br>";
+			for (var friendIndex=0; friendIndex<data.length; friendIndex++)
+			{
+				//document.write('Friend name, ' + data[friendIndex].name + '.');
+				divBasicInfo.innerHTML += data[friendIndex].name + 
+				", email " + data[friendIndex].email +
+				", current_location " + data[friendIndex].current_location + 
+				"<br>";
+				divBasicInfo.innerHTML += "<hr><img src='http://graph.facebook.com/"+data[friendIndex].id+"/picture'/><br><br>";
+			}
+		});
+	
+		// display friends list end
+		//check for permissions start
+		// Function that checks needed user permissions
+		divAppInfo.innerHTML = '';
+		FB.api('/me/permissions', function(response) {
+			var permsArray = response.data[0];
+			//document.write('Permissions length, ' + permsArray.length + '.');
+			for(var key in permsArray) {
+				//alert(key + " :" + permsArray[key]);
+				if(permsArray[key] === 1) {
+					//console.log(key+' is granted')
+					divAppInfo.innerHTML += key+' is granted' + "<br>";
+				} else {
+					//console.log(key+' is not granted')
+					divAppInfo.innerHTML += key+' is not granted' + "<br>";
+				}
+			}
+		});
+
+	// check for permissions end
+	} else {
+		//document.write('User cancelled login or did not fully authorize.');
+		divBasicInfo.innerHTML = 'Please login to Facebook to view this content.';
+		divAppInfo.innerHTML = 'Please login to Facebook to view this content.';
+	}
+}
+
+function facebookLogout() {
+	if (typeof response != 'undefined') {
+		if(response.status === 'connected') {
+			handleFBAppLogout();
+		}
+	}
+}
+function handleFBAppLogout() {
+	//=== handle data cleanup here
+	$('#divBasicInfo').html('');
+	$('#divAppInfo').html('');
+	//alert('FB data cleared status = ' + response.status);
+}
+FB.Event.subscribe("auth.logout", facebookLogout);
+
+</script>
+
+</html>

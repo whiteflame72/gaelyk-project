@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title>Facebook Store</title>
+	<script type="text/javascript" src="jquery-1.7.1.js"></script>
+	<script src="custom-scripting.js"></script> <!-- has to be before jquerymobile plugin !!! -->
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>-->	<!-- can't use the real one yet, as some namespacing is added -->
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+</head>
+<body>
+      <div data-role="page" data-theme="d" id="store1" data-add-back-btn="false">
+      	<div data-role="header" data-backbtn="false" data-back-btn-theme="a">
+        	<a data-role="button" data-icon="delete" href="/splitview/index-vz.html#mystore">&nbsp;</a>
+      		<h1>Store Management</h1>
+      	</div><!-- /header -->
+<div data-role="content" id="contentCategories">
+<iframe width="100%;" height="100%;" src="https://my.ecwid.com/cp/CP.html?ownerid=1029215&token=89d6f4e44f036408669e313bf7f850475da5266e#orders=0&order=list&products=list&catalog=0&promotions=0&profile=-1&settings=-1&t1=0&t2=-1&dashboard=-1&customers=0"></iframe>
+<!--
+!-- shopping bar -
+<div>
+<script type="text/javascript" src="http://app.ecwid.com/script.js?1029215" charset="utf-8"></script>
+!-- remove layout parameter if you want to position minicart yourself -
+<script type="text/javascript"> xMinicart("style=","layout=attachToCategories"); </script>
+</div>
+!-- category -
+<div>
+<script type="text/javascript" src="http://app.ecwid.com/script.js?1029215" charset="utf-8"></script>
+<script type="text/javascript"> xCategories("style="); </script>
+</div>
+!-- product browser -
+<div>
+<script type="text/javascript" src="http://app.ecwid.com/script.js?1029215" charset="utf-8"></script>
+<script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(3,3) list(10) table(20)","categoryView=grid","searchView=list","style="); </script>
+<noscript>Your browser does not support JavaScript. Please proceed to <a href="http://app.ecwid.com/jsp/1029215/catalog">HTML version of Jen Chong's store</a></noscript>
+</div>
+-->
+	</div>
+	</div>
+</body>
+</html>

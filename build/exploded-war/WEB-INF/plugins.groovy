@@ -1,0 +1,2 @@
+install simpleDomain
+install easyDSPlugin

@@ -1,0 +1,21 @@
+<html>
+<head>
+	<title>Facebook Store</title>
+	<script type="text/javascript" src="jquery-1.7.1.js"></script>
+	<script src="custom-scripting.js"></script> <!-- has to be before jquerymobile plugin !!! -->
+	<!--<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>-->	<!-- can't use the real one yet, as some namespacing is added -->
+	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+</head>
+<body>
+      <div data-role="page" data-theme="d" id="store1" data-add-back-btn="false">
+      	<div data-role="header" data-backbtn="false" data-back-btn-theme="a">
+        	<a data-role="button" data-icon="delete" href="/splitview/index-vz.html#mystore">&nbsp;</a>
+      		<h1>Store Management</h1>
+      	</div><!-- /header -->
+<div data-role="content" id="contentCategories">
+<iframe width="100%;" height="100%;" src="storewrapper.html"></iframe>
+	</div>
+	</div>
+</body>
+</html>

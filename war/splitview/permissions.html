@@ -1,0 +1,57 @@
+<html>
+<head>
+<title>Facebook API - Permissions Granted</title>
+</head>
+<body>
+<script type="text/javascript" src="fbinit.js"></script>
+<h1>&nbsp;&nbsp;&nbsp;Sample FaceBook APP</h1>
+<div align="center">
+<img id="image"/>
+<div id="name"></div>
+</div>
+<div id="divInfo"></div>
+<script>
+//////start
+FB.getLoginStatus(function(response){
+	if (response.authResponse) {
+		document.write('Welcome! Fetching your information.... ');
+		// display friends list start
+		FB.api('/me/friends', function(response) {
+			document.write('Good to see you, ' + response.data.length + '.');
+			var data=response.data;
+			for (var friendIndex=0; friendIndex<data.length; friendIndex++)
+			{
+				document.write('Friend name, ' + data[friendIndex].name + '.');
+				var divInfo = document.getElementById("divInfo");
+				divInfo.innerHTML += data[friendIndex].name + "<br />";
+				divInfo.innerHTML += "<hr><img src='http://graph.facebook.com/"+data[friendIndex].id+"/picture'></img<br /><br />";
+			}
+		});
+	
+		// display friends list end
+		//check for permissions start
+		// Function that checks needed user permissions
+		FB.api('/me/permissions', function(response) {
+			var permsArray = response.data[0];
+			document.write('Permissions length, ' + permsArray.length + '.');
+			/////////////
+			for(var key in permsArray) {
+				if(permsArray[key] === "1") {
+				//console.log(key+' is granted')
+				document.write(key+' is granted')
+				} else {
+				//console.log(key+' is not granted')
+				document.write(key+' is not granted')
+				}
+			}
+		});
+
+	// check for permissions end
+	} else {
+		document.write('User cancelled login or did not fully authorize.');
+	}
+}, {scope: 'email'});
+
+</script>
+</body>
+</html>

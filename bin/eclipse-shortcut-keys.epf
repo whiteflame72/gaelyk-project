@@ -1,0 +1,201 @@
+#Fri Jul 15 19:22:46 EDT 2011
+/instance/org.eclipse.pde.core/org.eclipse.pde.ui.arch=x86_64
+@com.genuitec.pulse2.common.ui=4.0.0.v201105241300
+/instance/org.eclipse.pde.core/checkedPlugins=[savedAll]
+@org.eclipse.birt.report.data.oda.jdbc.ui=3.7.0.v20110602
+/instance/com.google.gdt.eclipse.suite/versionForLastForcedRebuild_GoogleAppEngine=2.3.2.r37v201106211634
+/instance/org.eclipse.mylyn.context.core/mylyn.attention.migrated=true
+/instance/org.eclipse.mylyn.java.ui/org.eclipse.mylyn.java.ui.run.count.3_1_0=1
+/instance/org.eclipse.wst.sse.core/task-tag-projects-already-scanned=GoogleAppEngine,VZIOS,astro,KSSToolkit,X-Pad,KSSToolkit_FDT,GoogleAppEngineSQL,WicketRad,Copy of persistence,Copy of wicketopia,example,java,persistence,wicketopia
+/instance/org.eclipse.ui.views.log/activate=true
+@org.eclipse.m2e.discovery=1.0.0.20110607-2117
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+/instance/org.eclipse.ui.ide/platformState=1310733658999
+@org.eclipse.ui.ide=3.7.0.I20110519-0100
+@org.eclipse.jdt.core=3.7.0.v_B61
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=/Applications/Genuitec/Eclipse 3.7 Java.app/Contents/Profile
+/instance/org.eclipse.pde.core/org.eclipse.pde.ui.os=macosx
+@org.eclipse.wst.sse.core=1.1.600.v201105162116
+/instance/org.eclipse.wst.sse.ui/content_assist_number_of_computers=4
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.javadoclocations.migrated=true
+@org.eclipse.wst.sse.ui=1.3.0.v201105101529
+/instance/org.eclipse.debug.ui/preferredTargets=default\:default|
+/configuration/org.eclipse.ui.ide/SHOW_WORKSPACE_SELECTION_DIALOG=false
+/instance/org.eclipse.pde.core/vm_args=-Xms40m -Xmx384m -Xdock\:icon\=../Resources/Eclipse.icns -XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
+/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.ExpressionView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.debug.ui.VARIALBE_COLUMN_PRESENTATION.COL_VAR_NAME" SIZE\="213"/>\n<COLUMN_SIZES IMemento.internal.id\="org.eclipse.debug.ui.VARIALBE_COLUMN_PRESENTATION.COL_VAR_VALUE" SIZE\="307"/>\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.ExpressionView"/>\n</VariablesViewMemento>
+/configuration/com.google.gdt.eclipse.suite/projectMigratorVersion_wicketopia-parent-0.9.2=4
+/instance/org.tigris.subversion.subclipse.tools.usage/ask_user_for_usage_report_preference=false
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+/instance/org.eclipse.ant.ui/useQuickDiffPrefPage=true
+/instance/org.eclipse.team.ui/org.eclipse.team.ui.sychronizing_default_participant=org.tigris.subversion.subclipse.participant
+/instance/org.eclipse.debug.core/prefWatchExpressions=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<watchExpressions>\n<expression enabled\="true" text\="entityType"/>\n<expression enabled\="true" text\="identifier"/>\n</watchExpressions>\n
+/instance/org.eclipse.birt.report.data.oda.jdbc.ui/user_max_num_of_schema=20
+@org.eclipse.team.ui=3.6.100.I20110525-0800
+/instance/org.eclipse.jdt.launching/org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<vmSettings defaultVM\="52,org.eclipse.jdt.internal.launching.macosx.MacOSXType8,Contents" defaultVMConnector\="">\n<vmType id\="org.eclipse.jdt.internal.launching.macosx.MacOSXType">\n<vm id\="Contents" name\="Java SE 6 (MacOS X Default)" path\="/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home"/>\n</vmType>\n</vmSettings>\n
+/instance/org.eclipse.ui.workbench/PLUGINS_NOT_ACTIVATED_ON_STARTUP=org.eclipse.m2e.discovery;
+/instance/org.eclipse.team.cvs.ui/pref_first_startup=false
+/instance/org.eclipse.jubula.client.ui/MAJORVERSION_PREF_KEY=1
+/instance/org.eclipse.ui.ide/IMPORT_FILES_AND_FOLDERS_RELATIVE=true
+/instance/org.eclipse.pde.core/org.eclipse.pde.ui.nl=en_US
+/configuration/org.tigris.subversion.subclipse.tools.usage/first_visit=1309460995993
+/instance/org.eclipse.ui.ide/quickStart=false
+\!/=
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.source=1.6
+@org.eclipse.search=3.7.0.v20110505-0800
+/instance/com.genuitec.pulse.client.targetcfg.collab.ui/com.genuitec.pulse.targetcfg.notify.dashboard.subsequent.launch=true
+/instance/org.eclipse.ui.ide/tipsAndTricks=true
+/instance/org.eclipse.jdt.ui/tabWidthPropagated=true
+@org.eclipse.debug.ui=3.7.0.v20110518
+/instance/org.eclipse.ui.editors/overviewRuler_migration=migrated_3.1
+/instance/org.eclipse.pde.core/target_platform_realization=true
+@org.eclipse.ui.workbench=3.7.0.I20110519-0100
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.code_templates_migrated=true
+@com.google.appengine.eclipse.core=2.3.2.r37v201106211634
+/instance/org.eclipse.birt.report.designer.ui/Palette\ Size=125
+@com.google.gdt.eclipse.suite=2.3.2.r37v201106211634
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.classpathVariable.JRE_LIB=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
+/instance/org.eclipse.mylyn.monitor.ui/org.eclipse.mylyn.monitor.activity.tracking.enabled.checked=true
+/instance/org.eclipse.pde.core/pooled_urls=org.mortbay.jetty.server.source_6.1.23.v201012071420.jar,org.eclipse.jetty.servlet_7.4.2.v20110526.jar,org.eclipse.jetty.servlet.source_7.4.2.v20110526.jar
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.internal.ui.navigator.layout=2
+/instance/org.eclipse.team.ui/org.eclipse.team.ui.sychronizing_default_participant_sec_id=1310179381561
+/instance/org.eclipse.pde.core/target.profile=
+/configuration/com.google.gdt.eclipse.suite/projectMigratorVersion_GoogleAppEngine=4
+/configuration/org.tigris.subversion.subclipse.tools.usage/last_visit=1310771984260
+@org.eclipse.ant.ui=3.5.100.v20110510
+/configuration/com.google.gdt.eclipse.suite/projectMigratorVersion_Copy\ of\ wicketopia-parent-0.9.2=4
+/instance/org.eclipse.ui/showIntro=false
+/instance/org.eclipse.pde.core/target_mode=useThis
+/instance/org.eclipse.ui.views.log/orderType=2
+/instance/org.eclipse.team.ui/org.eclipse.team.ui.first_time=false
+/instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.ui.editor.tab.width=
+/configuration/org.tigris.subversion.subclipse.tools.usage/eclipse_instance_id=44937217840808779261309460996071
+/instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.ui.javadoclocations.migrated=true
+@org.eclipse.ui.browser=3.3.100.v20110426
+/instance/com.google.gdt.eclipse.suite/addedNewWizardActions1.2_org.eclipse.jdt.ui.JavaPerspective=com.google.gdt.eclipse.suite.wizards.newProjectWizard|com.google.gwt.eclipse.core.newModuleWizard|com.google.gwt.eclipse.core.newHostPageWizard|com.google.gwt.eclipse.core.newEntryPointWizard|com.google.gwt.eclipse.core.newClientBundleWizard|com.google.gwt.eclipse.core.newUiBinderWizard
+/instance/org.eclipse.pde.core/platform_path=/Applications/Genuitec/Eclipse 3.7 Java.app/Contents/Profile/
+/instance/org.eclipse.birt.report.data.oda.jdbc.ui/JDBC\ Driver\ Map=rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAADdAAwb3JnLmVjbGlwc2UuYmlydC5yZXBvcnQuZGF0YS5vZGEuc2FtcGxlZGIuRHJpdmVyc3IAOG9yZy5lY2xpcHNlLmJpcnQucmVwb3J0LmRhdGEub2RhLmpkYmMudWkudXRpbC5Ecml2ZXJJbmZvpAGLHD+7w98CAANMAAtkaXNwbGF5TmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO0wACmRyaXZlck5hbWVxAH4ABEwAC3VybFRlbXBsYXRlcQB+AAR4cHQAI0NsYXNzaWMgTW9kZWxzIEluYy4gU2FtcGxlREIgRHJpdmVydAAwb3JnLmVjbGlwc2UuYmlydC5yZXBvcnQuZGF0YS5vZGEuc2FtcGxlZGIuRHJpdmVydAAbamRiYzpjbGFzc2ljbW9kZWxzOnNhbXBsZWRidAAwb3JnLmVjbGlwc2UuYmlydC5yZXBvcnQuZGF0YS5vZGEuaGl2ZS5IaXZlRHJpdmVyc3EAfgADdAALSGl2ZSBEcml2ZXJ0ADBvcmcuZWNsaXBzZS5iaXJ0LnJlcG9ydC5kYXRhLm9kYS5oaXZlLkhpdmVEcml2ZXJ0ACNqZGJjOmhpdmU6Ly9sb2NhbGhvc3Q6MTAwMDAvZGVmYXVsdHQAJG9yZy5hcGFjaGUuZGVyYnkuamRiYy5FbWJlZGRlZERyaXZlcnNxAH4AA3QAHEFwYWNoZSBEZXJieSBFbWJlZGRlZCBEcml2ZXJ0ACRvcmcuYXBhY2hlLmRlcmJ5LmpkYmMuRW1iZWRkZWREcml2ZXJ0ADdqZGJjOmRlcmJ5OltzdWJzdWJwcm90b2NvbDpdREFUQUJBU0VbO0FUVFJJQlVURT1WQUxVRV0qeA\=\=
+/configuration/org.eclipse.ui.ide/RECENT_WORKSPACES_PROTOCOL=3
+/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.VariableView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.VariableView"/>\n</VariablesViewMemento>
+/instance/org.eclipse.debug.ui/preferredDetailPanes=DefaultDetailPane\:DefaultDetailPane|org.eclipse.jdt.debug.ui.DETAIL_PANE_LINE_BREAKPOINT\:org.eclipse.jdt.debug.ui.DETAIL_PANE_LINE_BREAKPOINT|
+/configuration/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
+/instance/org.eclipse.jdt.ui/useQuickDiffPrefPage=true
+/instance/org.eclipse.jdt.ui/content_assist_proposals_foreground=0,0,0
+/instance/org.eclipse.jubula.client.ui/MINORVERSION_PREF_KEY=1
+/instance/com.genuitec.pulse.client.targetcfg.collab.ui/com.genuitec.pulse.targetcfg.notify.dashboard.skip=true
+/instance/org.eclipse.wst.jsdt.ui/fontPropagated=true
+/instance/org.eclipse.pde.core/pooled_bundles=
+@org.tigris.subversion.subclipse.tools.usage=1.0.1
+/instance/org.eclipse.pde.core/checkedVersionPlugins=[savedNone]
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+/instance/org.eclipse.pde.core/org.eclipse.pde.ui.ws=cocoa
+/instance/org.eclipse.pde.core/workspace_target_handle=local\:1309529247366.target
+@org.eclipse.jdt.ui=3.7.0.v20110531-1200
+/instance/org.eclipse.ui.workbench/org.eclipse.ui.commands=<?xml version\="1.0" encoding\="UTF-8"?>\n<org.eclipse.ui.commands>\n<keyBinding commandId\="org.tigris.subversion.subclipse.ui.update" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+O"/>\n<keyBinding commandId\="org.tigris.subversion.subclipse.ui.commit" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+I"/>\n<keyBinding contextId\="org.eclipse.pde.ui.pdeEditorContext" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.pde.ui.pdeEditorContext" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.mylyn.tasks.ui.editors.task" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.mylyn.tasks.ui.editors.task" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.wst.sse.ui.structuredTextEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.wst.sse.ui.structuredTextEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.mylyn.wikitext.ui.editor.markupSourceContext" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.mylyn.wikitext.ui.editor.markupSourceContext" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.jdt.ui.javaEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.jdt.ui.javaEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+O"/>\n<keyBinding contextId\="org.eclipse.jdt.ui.javaEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+I"/>\n<keyBinding contextId\="org.eclipse.jdt.ui.javaEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+I"/>\n<keyBinding contextId\="org.eclipse.wst.sse.ui.structuredTextEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+I"/>\n<keyBinding contextId\="org.eclipse.wst.sse.ui.structuredTextEditorScope" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+I"/>\n<keyBinding contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+I"/>\n<keyBinding contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+I"/>\n<keyBinding contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="COMMAND+I"/>\n<keyBinding commandId\="org.eclipse.m2e.actions.LifeCycleInstall.run" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+B"/>\n<keyBinding commandId\="org.eclipse.m2e.actions.LifeCycleClean.run" contextId\="org.eclipse.ui.contexts.window" keyConfigurationId\="org.eclipse.ui.defaultAcceleratorConfiguration" keySequence\="CTRL+SHIFT+C"/>\n</org.eclipse.ui.commands>
+@org.eclipse.jdt.debug.ui=3.6.0.v20110512
+/instance/org.eclipse.jdt.ui/useAnnotationsPrefPage=true
+/instance/org.eclipse.ui.ide/PROBLEMS_FILTERS_MIGRATE=true
+/instance/org.eclipse.jdt.ui/content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+/configuration/org.eclipse.ui.ide/RECENT_WORKSPACES=/Users/ag/Workspaces/Eclipse 3.7 Java
+/instance/org.eclipse.birt.report.data.oda.jdbc.ui/shemas_prefetch_config=YES
+@org.tigris.subversion.subclipse.ui=1.6.18
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.formatterprofiles.version=12
+/instance/org.eclipse.wst.sse.ui/useQuickDiffPrefPage=true
+/instance/org.eclipse.jdt.debug.ui/org.eclipse.debug.ui.ExpressionView.org.eclipse.jdt.debug.ui.show_null_entries=true
+/instance/org.eclipse.ui.views.log/groupBy=0
+/instance/org.eclipse.jdt.launching/PREF_VM_INSTALL_SYSTEM_PROPERTY.org.eclipse.jdt.internal.launching.macosx.MacOSXType.Contents.java.specification.version=1.6
+@com.genuitec.pulse.client.targetcfg.collab.ui=4.0.0.v201105241300
+file_export_version=3.0
+@com.collabnet.subversion.merge=2.2.4
+@org.eclipse.mylyn.context.core=3.6.0.v20110608-1400
+/instance/org.eclipse.ui.browser/browsers=<?xml version\="1.0" encoding\="UTF-8"?>\n<web-browsers current\="0">\n<system/>\n<external location\="/Applications/Firefox.app/Contents/MacOS/firefox-bin" name\="Firefox"/>\n</web-browsers>
+/configuration/org.eclipse.ui.ide/MAX_RECENT_WORKSPACES=5
+/instance/org.eclipse.birt.report.data.oda.jdbc.ui/JDBC\ Jar\ List=rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAABdAAjbXlzcWwtY29ubmVjdG9yLWphdmEtNS4xLjE2LWJpbi5qYXJzcgA1b3JnLmVjbGlwc2UuYmlydC5yZXBvcnQuZGF0YS5vZGEuamRiYy51aS51dGlsLkphckZpbGX1YJoUc1N5HAIABFoAC3RvQmVEZWxldGVkTAAIZmlsZU5hbWV0ABJMamF2YS9sYW5nL1N0cmluZztMAAhmaWxlUGF0aHEAfgAETAAFc3RhdGVxAH4ABHhwAHEAfgACdABmL1VzZXJzL2FnL1dvcmtzcGFjZXMvRWNsaXBzZSAzLjYgSmF2YSBFRS9Hb29nbGVBcHBFbmdpbmUvbGliL2p1bml0L215c3FsLWNvbm5lY3Rvci1qYXZhLTUuMS4xNi1iaW4uamFydAAAeA\=\=
+/instance/org.eclipse.ant.ui/useAnnotationsPrefPage=true
+/instance/org.eclipse.jdt.ui/spelling_locale_initialized=true
+/instance/org.tigris.subversion.subclipse.core/repositories/http%%%googleappengine.googlecode.com%svn%trunk/location=http\://googleappengine.googlecode.com/svn/trunk
+/instance/org.eclipse.jdt.ui/content_assist_number_of_computers=18
+@org.eclipse.wst.xml.ui=1.1.200.v201105111835
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.DebugVieworg.eclipse.debug.ui.DebugView=<?xml version\="1.0" encoding\="UTF-8"?>\n<DebugViewMemento org.eclipse.debug.ui.BREADCRUMB_DROPDOWN_AUTO_EXPAND\="false"/>
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.editor.tab.width=
+/configuration/com.google.gdt.eclipse.suite/id=1309464247856
+@org.eclipse.mylyn.java.ui=3.6.0.v20110608-1400
+/instance/org.tigris.subversion.subclipse.ui/pref_merge_provider=CollabNet Desktop
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.compliance=1.6
+/instance/org.tigris.subversion.subclipse.tools.usage/allow_usage_report_preference=true
+/instance/org.eclipse.ui.views.log/show_filter_text=true
+/instance/org.eclipse.jdt.ui/content_assist_disabled_computers=org.eclipse.jdt.ui.javaAllProposalCategory\u0000org.eclipse.jdt.ui.javaNoTypeProposalCategory\u0000org.eclipse.jdt.ui.textProposalCategory\u0000org.eclipse.jdt.ui.javaTypeProposalCategory\u0000
+/instance/org.eclipse.wst.xml.ui/org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart.lastActivePage=1
+/instance/org.eclipse.jdt.ui/breadcrumb.org.eclipse.jdt.ui.JavaPerspective=true
+/configuration/com.google.gdt.eclipse.suite/projectMigratorVersion_GoogleAppEngineWicketopia=4
+@org.eclipse.ui.editors=3.7.0.v20110517-0800
+/instance/org.eclipse.wst.jsdt.ui/org.eclipse.jface.textfont=1|Monaco|11.0|0|COCOA|1|;
+/instance/org.eclipse.search/org.eclipse.search.defaultPerspective=org.eclipse.search.defaultPerspective.none
+@org.eclipse.wst.jsdt.ui=1.1.100.v201105041953
+/instance/org.eclipse.core.resources/version=1
+@org.eclipse.core.net=1.2.100.I20110511-0800
+/instance/com.genuitec.pulse2.common.ui/com.genuitec.pulse.client.targetcfg.synced.proxy.settings=true
+/instance/org.eclipse.wst.jsdt.ui/tabWidthPropagated=true
+/instance/com.google.gdt.eclipse.suite/SdkRegistrants_1309464247856=com.google.appengine.eclipse.sdkbundle_1.5.1.r37v201106211634
+@org.tigris.subversion.subclipse.core=1.6.18
+/instance/org.eclipse.wst.jsdt.ui/useAnnotationsPrefPage=true
+/instance/org.eclipse.wst.jsdt.ui/org.eclipse.wst.jsdt.ui.formatterprofiles.version=11
+@org.eclipse.mylyn.monitor.ui=3.6.0.v20110608-1400
+@org.eclipse.debug.core=3.7.0.v20110518
+/instance/com.google.appengine.eclipse.core/sdkSetXml=PHNka3MgZGVmYXVsdFNkaz0iQXBwIEVuZ2luZSI+Cgk8c2RrIG5hbWU9IkFwcCBFbmdpbmUiIGxvY2F0aW9uPSIvQXBwbGljYXRpb25zL0dlbnVpdGVjL0NvbW1vbi9wbHVnaW5zL2NvbS5nb29nbGUuYXBwZW5naW5lLmVjbGlwc2Uuc2RrYnVuZGxlXzEuNS4xLnIzN3YyMDExMDYyMTE2MzQvYXBwZW5naW5lLWphdmEtc2RrLTEuNS4xLyIgdmVyc2lvbj0iMS41LjEiLz4KPC9zZGtzPgo\=
+/instance/org.eclipse.jdt.ui/proposalOrderMigrated=true
+/instance/org.eclipse.birt.report.data.oda.jdbc.ui/user_max_num_of_table_each_schema=100
+/instance/org.eclipse.jdt.ui/content_assist_proposals_background=255,255,255
+@org.eclipse.core.resources=3.7.100.v20110510-0712
+/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.PREF_LAUNCH_PERSPECTIVES=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<launchPerspectives/>\n
+/instance/org.eclipse.jdt.ui/org.eclipse.jface.textfont=1|Monaco|11.0|0|COCOA|1|;
+@org.eclipse.birt.report.designer.ui=3.7.0.v20110602
+/instance/com.google.gdt.eclipse.suite/versionForLastForcedRebuild_Copy\ of\ wicketopia-parent-0.9.2=2.3.2.r37v201106211634
+/instance/com.collabnet.subversion.merge/merge_provider_set=true
+@org.eclipse.jdt.launching=3.6.0.v20110509
+@org.eclipse.team.cvs.ui=3.3.400.I20110510-0800
+/instance/org.eclipse.jdt.debug.ui/org.eclipse.debug.ui.VariableView.org.eclipse.jdt.debug.ui.show_null_entries=true
+/instance/org.eclipse.m2e.discovery/org.eclipse.m2e.discovery.pref.projects=astro;
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=src
+/instance/org.eclipse.jdt.ui/fontPropagated=true
+/instance/com.google.gdt.eclipse.suite/versionForLastForcedRebuild_wicketopia-parent-0.9.2=2.3.2.r37v201106211634
+/instance/org.eclipse.wst.jsdt.ui/proposalOrderMigrated=true
+/configuration/com.google.gdt.eclipse.suite/lastUpdate=1310733752905
+/instance/org.eclipse.pde.core/saved_platform3=
+@org.eclipse.ui.views.log=1.0.200.v20110404
+/instance/org.eclipse.pde.core/saved_platform2=
+/instance/org.eclipse.pde.core/saved_platform1=/Applications/Genuitec/Eclipse 3.7 Java.app/Contents/Profile
+/instance/org.eclipse.birt.report.data.oda.jdbc.ui/Deleted\ Jar\ List=rO0ABXNyABFqYXZhLnV0aWwuSGFzaE1hcAUH2sHDFmDRAwACRgAKbG9hZEZhY3RvckkACXRocmVzaG9sZHhwP0AAAAAAAAx3CAAAABAAAAAAeA\=\=
+/instance/org.eclipse.pde.core/saved_platform0=/Applications/Genuitec/Eclipse 3.7 Java.app/Contents/Profile/
+@org.eclipse.jubula.client.ui=1.0.0.201106060803
+/instance/org.eclipse.ui.ide/IMPORT_FILES_AND_FOLDERS_TYPE=23,1\:7,1
+/instance/org.eclipse.wst.sse.ui/useAnnotationsPrefPage=true
+/instance/org.eclipse.ui.views.log/column4=150
+/instance/org.eclipse.debug.ui/pref_state_memento.org.eclipse.debug.ui.BreakpointView=<?xml version\="1.0" encoding\="UTF-8"?>\n<VariablesViewMemento org.eclipse.debug.ui.SASH_DETAILS_PART\="315" org.eclipse.debug.ui.SASH_VIEW_PART\="684">\n<PRESENTATION_CONTEXT_PROPERTIES IMemento.internal.id\="org.eclipse.debug.ui.BreakpointView">\n<BOOLEAN BOOLEAN\="true" IMemento.internal.id\="org.eclipse.debug.ui.check"/>\n</PRESENTATION_CONTEXT_PROPERTIES>\n</VariablesViewMemento>
+/instance/org.eclipse.ui.views.log/column3=150
+/instance/org.eclipse.pde.core/external_features=
+/instance/org.eclipse.ui.views.log/column2=300
+/configuration/org.eclipse.core.net/systemProxiesEnabled=true
+/instance/org.eclipse.birt.report.designer.ui/breadcrumb.org.eclipse.birt.report.designer.ui.ReportPerspective=true
+/instance/org.eclipse.birt.report.data.oda.jdbc.ui/user_timeout_limit=60
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.templates_migrated=true
+/instance/org.eclipse.debug.ui/org.eclipse.debug.ui.user_view_bindings=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\n<viewBindings>\n<view id\="org.eclipse.debug.ui.ExpressionView">\n<perspective id\="org.eclipse.debug.ui.DebugPerspective" userAction\="opened"/>\n</view>\n</viewBindings>\n
+/instance/org.eclipse.epp.mpc.ui/CatalogDescriptor=http\://marketplace.eclipse.org
+/instance/org.eclipse.ui.workbench/ENABLED_DECORATORS=org.eclipse.m2e.core.mavenVersionDecorator\:false,org.eclipse.jdt.ui.override.decorator\:true,org.eclipse.jdt.ui.interface.decorator\:false,org.eclipse.jdt.ui.buildpath.decorator\:true,org.eclipse.m2e.core.maven2decorator\:true,org.eclipse.mylyn.context.ui.decorator.interest\:true,org.eclipse.mylyn.tasks.ui.decorators.task\:true,org.eclipse.mylyn.team.ui.changeset.decorator\:true,org.eclipse.team.cvs.ui.decorator\:true,org.eclipse.ui.LinkedResourceDecorator\:true,org.eclipse.ui.VirtualResourceDecorator\:true,org.eclipse.ui.ContentTypeDecorator\:true,org.eclipse.ui.ResourceFilterDecorator\:false,
+/instance/org.eclipse.wst.jsdt.ui/useQuickDiffPrefPage=true
+/instance/org.eclipse.ui.ide/TASKS_FILTERS_MIGRATE=true
+/instance/org.eclipse.pde.core/additional_locations=/Users/ag/Workspaces/Eclipse 3.7 Java/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool,/Users/ag/Workspaces/Eclipse 3.7 Java/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool,/Users/ag/Workspaces/Eclipse 3.7 Java/.metadata/.plugins/org.eclipse.pde.core/.bundle_pool
+/instance/org.eclipse.core.net/org.eclipse.core.net.hasMigrated=true
+/instance/org.eclipse.birt.report.data.oda.jdbc.ui/enable_code_assit=YES
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+/configuration/org.tigris.subversion.subclipse.tools.usage/visit_count=35
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.compiler.codegen.targetPlatform=1.6
+/instance/org.eclipse.ui.views.log/orderValue=-1
+/instance/com.google.gdt.eclipse.suite/versionForLastForcedRebuild_GoogleAppEngineWicketopia=2.3.2.r37v201106211634
+/instance/org.eclipse.jdt.ui/MemberFilterActionGroup.org.eclipse.jdt.ui.JavaOutlinePage.4=true
+/instance/org.eclipse.jdt.core/org.eclipse.jdt.core.classpathVariable.JRE_SRC=/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/src.jar
+/instance/org.eclipse.pde.core/program_args=
+/instance/org.eclipse.jdt.ui/org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+@org.eclipse.pde.core=3.7.0.v20110603
+@org.eclipse.epp.mpc.ui=1.1.0.I20110525-0742
+@org.eclipse.ui=3.7.0.I20110602-0100
